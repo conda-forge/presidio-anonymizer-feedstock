@@ -1,5 +1,5 @@
 {% set name = "presidio-anonymizer" %}
-{% set version = "2.2.355" %}
+{% set version = "2.2.356" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/microsoft/presidio/archive/refs/tags/{{ version }}.tar.gz
-  sha256: fc0b6b8ff84da03c79702310e7af060116074ce1a39f6c29433e348eee76707b
+  sha256: be7fe65784d06f46471d92b1f1c471c7ce88dd64550554f7722087921c8635f6
 
 build:
   noarch: python
@@ -25,6 +25,7 @@ requirements:
     - azure-core
   run_constrained:
     - flask >=1.1
+    - gunicorn
 
 test:
   imports:
