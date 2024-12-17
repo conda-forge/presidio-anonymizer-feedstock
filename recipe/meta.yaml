@@ -25,6 +25,7 @@ requirements:
     - azure-core
   run_constrained:
     - flask >=1.1
+    - gunicorn
 
 test:
   imports:
