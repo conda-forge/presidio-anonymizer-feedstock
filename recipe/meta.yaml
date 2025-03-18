@@ -1,5 +1,5 @@
 {% set name = "presidio-anonymizer" %}
-{% set version = "2.2.357" %}
+{% set version = "2.2.358" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/microsoft/presidio/archive/refs/tags/{{ version }}.tar.gz
-  sha256: 3607530dfbd37e319644075931fb6138f240e2a626ae1f8821bba4da25e9867f
+  sha256: c6fdf07daa0af71abf40017f726abda6bebd82960a795906443ad5f661a922f6
 
 build:
   noarch: python
