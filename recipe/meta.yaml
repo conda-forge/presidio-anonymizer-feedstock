@@ -21,8 +21,7 @@ requirements:
     - poetry-core
   run:
     - python >={{ python_min }},<4
-    - pycryptodome >=3.10.1
-    - azure-core
+    - cryptography <44.1
   run_constrained:
     - flask >=1.1
     - gunicorn
